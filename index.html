@@ -36,16 +36,16 @@
       <div class="grid grid-cols-3 gap-5 pt-5">
         <div class="bg-[#ffffff] p-4 rounded-lg">
           <p class="text-[#323b49]">Total</p>
-          <p class="text-2xl font-bold">0</p>
+          <p id="totalNum" class="text-2xl font-bold">0</p>
         </div>
         <div class="bg-[#ffffff] p-5 rounded-lg">
           <p class="text-[#323b49]">Interview</p>
-          <p class="text-2xl font-bold text-green-500">0</p>
+          <p id="InterviewNum" class="text-2xl font-bold text-green-500">0</p>
 
         </div>
         <div class="bg-[#ffffff] p-4 rounded-lg">
           <p class="text-[#323b49]">Rejected</p>
-          <p class="text-2xl font-bold text-red-500">0</p>
+          <p id="rejectedNum" class="text-2xl font-bold text-red-500">0</p>
         </div>
       </div>
     </div>
@@ -61,15 +61,15 @@
     <div class="w-[80%] mx-auto py-6 pb-4 ">
       <div class="flex justify-between">
         <p class="pb-6 font-bold text-[20px]">Available Jobs</p>
-        <p class="text-gray-500"><span>0</span> jobs</p>
+        <p class="text-gray-500"><span id="jobsNum">0</span> jobs</p>
       </div>
 
       <div class="flex gap-2.5 ">
-        <button class="bg-blue-600 text-white py-2.5 px-8 rounded-lg">All</button>
+        <button id="btnAll" class="bg-blue-600 text-white py-2.5 px-8 rounded-lg">All</button>
 
-        <button class="bg-white py-2.5 px-8 text-gray-500 rounded-lg ">Interview</button>
+        <button id="btnInterview" class="bg-white py-2.5 px-8 text-gray-500 rounded-lg ">Interview</button>
 
-        <button class="bg-white py-2.5 px-8 text-gray-500 rounded-lg">Rejected</button>
+        <button id="btnRejected" class="bg-white py-2.5 px-8 text-gray-500 rounded-lg">Rejected</button>
 
       </div>
     </div>
@@ -87,7 +87,7 @@
         <div class="pb-6 ">
           <h1 class="text-[18px] font-bold">Mobile first Corp</h1>
           <p class="pt-1 mb-5 text-gray-500">React Native Developer</p>
-          <p class="mb-5 text-gray-500">Remote  ·  Full-time  ·  $130,000-$175,000</p>
+          <p class="mb-5 text-gray-500">Remote · Full-time · $130,000-$175,000</p>
           <p class="mb-2 py-2.5 px-5 inline-block rounded-lg bg-[#eef4ffFF]">NOT APPLIED</p>
           <p class="mb-5">Build cross-platform mobile applications using React Native. Work on products used by million
             of users
@@ -109,8 +109,9 @@
           <p class="pt-1 mb-5 text-gray-500">Web Designer & Developer</p>
           <p class="mb-5 text-gray-500">Los Angeles, CA · Part-time · $80,000 - $120,000</p>
           <p class="mb-2 py-2.5 px-5 inline-block rounded-lg bg-[#eef4ffFF]">NOT APPLIED</p>
-          <p class="mb-5">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design
-          trends.
+          <p class="mb-5">Create stunning web experiences for high-profile clients. Must have portfolio and experience
+            with modern web design
+            trends.
           </p>
           <button class="btn btn-soft btn-success border-green-500 ">INTERVIEW</button>
 
@@ -128,7 +129,8 @@
           <p class="pt-1 mb-5 text-gray-500">Data Visualization Specialist</p>
           <p class="mb-5 text-gray-500">Remote .Full-time . $130,000-$175,000</p>
           <p class="mb-2 py-2.5 px-5 inline-block rounded-lg bg-[#eef4ffFF]">NOT APPLIED</p>
-          <p class="mb-5">Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.
+          <p class="mb-5">Transform complex data into compelling visualizations. Required skills: D3.js, React, and
+            strong analytical thinking.
           </p>
           <button class="btn btn-soft btn-success border-green-500 ">INTERVIEW</button>
 
@@ -146,8 +148,9 @@
           <p class="pt-1 mb-5 text-gray-500">Backend Developer</p>
           <p class="mb-5 text-gray-500">Seattle, WA · Full-time · $140,000 - $190,000</p>
           <p class="mb-2 py-2.5 px-5 inline-block rounded-lg bg-[#eef4ffFF]">NOT APPLIED</p>
-          <p class="mb-5">Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud
-          infrastructure.
+          <p class="mb-5">Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps
+            practices and cloud
+            infrastructure.
           </p>
           <button class="btn btn-soft btn-success border-green-500 ">INTERVIEW</button>
 
@@ -165,8 +168,9 @@
           <p class="pt-1 mb-5 text-gray-500">UI/UX Engineer</p>
           <p class="mb-5 text-gray-500">Austin, TX · Full-time · $110,000 - $150,000</p>
           <p class="mb-2 py-2.5 px-5 inline-block rounded-lg bg-[#eef4ffFF]">NOT APPLIED</p>
-          <p class="mb-5">Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development
-          expertise required.
+          <p class="mb-5">Create beautiful and functional user interfaces for our suite of products. Strong design
+            skills and frontend development
+            expertise required.
           </p>
           <button class="btn btn-soft btn-success border-green-500 ">INTERVIEW</button>
 
@@ -184,8 +188,9 @@
           <p class="pt-1 mb-5 text-gray-500">JavaScript Developer</p>
           <p class="mb-5 text-gray-500">New York, NY • Full-time • $130,000 - $170,00</p>
           <p class="mb-2 py-2.5 px-5 inline-block rounded-lg bg-[#eef4ffFF]">NOT APPLIED</p>
-          <p class="mb-5">Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health
-          insurance, and professional development opportunities.
+          <p class="mb-5">Build enterprise applications with JavaScript and modern frameworks. We offer competitive
+            compensation, health
+            insurance, and professional development opportunities.
           </p>
           <button class="btn btn-soft btn-success border-green-500 ">INTERVIEW</button>
 
@@ -203,8 +208,9 @@
           <p class="pt-1 mb-5 text-gray-500">Full Stack Engineer</p>
           <p class="mb-5 text-gray-500">Remote • Full-time • $120,000 - $160,000</p>
           <p class="mb-2 py-2.5 px-5 inline-block rounded-lg bg-[#eef4ffFF]">NOT APPLIED</p>
-          <p class="mb-5">Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits
-          and equity package included.
+          <p class="mb-5">Join our fast-growing startup and work on our core platform. Experience with Node.js and React
+            required. Great benefits
+            and equity package included.
           </p>
           <button class="btn btn-soft btn-success border-green-500 ">INTERVIEW</button>
 
@@ -222,8 +228,9 @@
           <p class="pt-1 mb-5 text-gray-500">Senior Frontend Developer</p>
           <p class="mb-5 text-gray-500">San Francisco, CA • Full-time • $130,000 - $175,000</p>
           <p class="mb-2 py-2.5 px-5 inline-block rounded-lg bg-[#eef4ffFF]">NOT APPLIED</p>
-          <p class="mb-5">We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You
-          will work with a talented team on cutting-edge projects.
+          <p class="mb-5">We are looking for an experienced Frontend Developer to build scalable web applications using
+            React and TypeScript. You
+            will work with a talented team on cutting-edge projects.
           </p>
           <button class="btn btn-soft btn-success border-green-500 ">INTERVIEW</button>
 
@@ -241,5 +248,6 @@
 
 
 </body>
+<script src="script.js"></script>
 
 </html>
